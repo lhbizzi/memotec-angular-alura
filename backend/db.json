@@ -1,0 +1,22 @@
+{
+  "thoughts": [
+    {
+      "id": 1,
+      "conteudo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      "autoria": "Bill Gates",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      "autoria": "Elon Musk",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 3,
+      "conteudo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      "autoria": "Athos Stamato",
+      "modelo": "modelo3"
+    }
+  ]
+}
