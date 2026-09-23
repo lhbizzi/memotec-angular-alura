@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Thought } from '../thought';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-thought',
@@ -6,13 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./thought.component.css'],
 })
 export class ThoughtComponent implements OnInit {
-  @Input() thought = {
-    conteudo: '',
-    autoria: '',
-    modelo: '',
-  };
+  @Input() thought!: Thought;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -21,5 +19,9 @@ export class ThoughtComponent implements OnInit {
       return 'pensamento-g';
     }
     return 'pensamento-p';
+  }
+
+  deleteThought() {
+    this.router.navigate([`/thoughts/delete-thought/${this.thought.id}`]);
   }
 }
