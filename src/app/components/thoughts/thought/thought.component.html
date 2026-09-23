@@ -11,7 +11,7 @@
     <b>{{ thought.autoria }}</b>
   </p>
   <div class="acoes">
-    <button class="botao-editar">
+    <button class="botao-editar" (click)="updateThought()">
       <img src="/assets/imagens/icone-editar.png" alt="Ícone de Edição" />
     </button>
     <button class="botao-excluir" (click)="deleteThought()">

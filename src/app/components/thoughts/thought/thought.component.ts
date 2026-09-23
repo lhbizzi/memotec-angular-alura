@@ -24,4 +24,8 @@ export class ThoughtComponent implements OnInit {
   deleteThought() {
     this.router.navigate([`/thoughts/delete-thought/${this.thought.id}`]);
   }
+
+  updateThought() {
+    this.router.navigate([`/thoughts/update-thought/${this.thought.id}`]);
+  }
 }

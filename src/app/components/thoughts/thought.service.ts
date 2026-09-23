@@ -22,12 +22,13 @@ export class ThoughtService {
     return this.http.get<Thought>(this.API + '/' + id);
   }
 
-  update(id: number): Observable<Thought> {
-    const thought = this.searchById(id);
-    return this.http.put<Thought>(this.API, thought);
+  update(thought: Thought): Observable<Thought> {
+    const url = `${this.API}/${thought.id}`;
+    return this.http.put<Thought>(url, thought);
   }
 
   delete(id: number): Observable<Thought> {
-    return this.http.delete<Thought>(this.API + '/' + id);
+    const url = `${this.API}/${id}`;
+    return this.http.delete<Thought>(url);
   }
 }
